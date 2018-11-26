@@ -1,9 +1,7 @@
 package com.tws.refactoring.extract_method;
 
-import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Vector;
 
 public class OwingPrinter {
     void printOwing(String name, List<Order> orders) {

@@ -7,9 +7,8 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
-import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class OwingPrinterTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -47,7 +46,7 @@ public class OwingPrinterTest {
     @Test
     public void should_print_order_with_one_owing() {
         OwingPrinter owingPrinter = new OwingPrinter();
-        owingPrinter.printOwing("PersonB", Arrays.asList(new Order (2)));
+        owingPrinter.printOwing("PersonB", Arrays.asList(new Order(2)));
         assertEquals(
                 "*****************************\r\n" +
                         "****** Customer totals ******\r\n" +
